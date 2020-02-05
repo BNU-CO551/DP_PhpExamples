@@ -1,6 +1,13 @@
 <html>
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        code
+        {
+            wordwrap:none; color:#0000ff;
+            font-family: monospace,monospace;
+        }
+    </style>
 </head>
 <body class="container">
     <header class="jumbotron">
@@ -12,6 +19,14 @@
                 <div class="card-header bg-success text-white mb-3">
                     Exercise 1
                 </div>
+                <code class="card-body border">
+                    &lt;?php<br/>
+                        $myVar = "Hello Derek";
+                        $number = 5;<br/>
+
+                        echo $myVar . " " . $number;<br/>
+                    ?&gt;
+                </code>               
                 <div class="card-body mb-3">
                     <?php
                         $myVar = "Hello Derek";
@@ -27,6 +42,9 @@
                 <div class="card-header bg-warning text-white mb-3">
                     Exercise 2
                 </div>
+                <code class="card-body mb-3 border">
+                    &lt;?php echo $_SERVER["HTTP_USER_AGENT"]; ?&gt; 
+                </code>                
                 <div class="card-body mb-3">
                     <?php echo $_SERVER["HTTP_USER_AGENT"]; ?> 
                 </div>
@@ -37,6 +55,9 @@
                 <div class="card-header bg-danger text-white mb-3">
                     Exercise 3
                 </div>
+                <code class="card-body mb-3 border">
+                    &lt?php echo "Blimmy it worked !"; ?&gt; 
+                </code>                
                 <div class="card-body mb-3">
                     <?php echo "Blimmy it worked !"; ?> 
                 </div>
@@ -49,6 +70,9 @@
                 <div class="card-header bg-success text-white mb-3">
                     Exercise 4
                 </div>
+                <code class="card-body border">
+                    &lt;?php echo gmdate("M d Y");?&gt;
+                </code>                
                 <div class="card-body">
                     <?php echo gmdate("M d Y");?>
                 </div>
@@ -59,8 +83,17 @@
                 <div class="card-header bg-warning text-white mb-3">
                     Exercise 5
                 </div>
+                <code class="card-body">
+                    &lt;?php<br/>
+                        $myfavouritemodule = "Internet Systems Development";<br/>
+                        echo $myfavouritemodule;<br/>
+                    ?&gt;
+                </code>                
                 <div class="card-body">
-                     
+                    <?php
+                        $myfavouritemodule = "Internet Systems Development";
+                        echo $myfavouritemodule;
+                    ?>
                 </div>
             </div>
         </div>
@@ -69,8 +102,21 @@
                 <div class="card-header bg-danger text-white mb-3">
                     Exercise 6
                 </div>
+                <code class="card-body border">
+                    &lt;?php<br/>
+                        $firstname = "Derek";<br/>
+                        $lastname = " Peacock";<br/>
+                        $name = $firstname . $lastname;<br/>
+                        echo $name;<br/>
+                    ?&gt;
+                </code>                
                 <div class="card-body">
-                     
+                    <?php
+                        $firstname = "Derek";
+                        $lastname = " Peacock";
+                        $name = $firstname . $lastname;
+                        echo $name;
+                    ?>
                 </div>
             </div>
         </div>
