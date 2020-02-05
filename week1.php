@@ -121,7 +121,45 @@
             </div>
         </div>
     </section> 
+    <section class="row mb-3">
+        <div class="col-6">
+            <div class="card">
+                <div class="card-header mb-3">
+                    Exercise 7 Code
+                </div>
+                <code class="card-body border">
+                    &lt;?php
+                        $hourlyrate	= 5.75;<br/>
+                        $hoursperweek = 40;<br/>
+                        $gross = $hourlyrate * $hoursperweek;<br/>
+                        $net = $gross - ($gross * 0.22);<br/>
+                        echo "Gross = £" .$gross . "&lt;br/>"; <br/>
+                        echo "Net   = £" .$net "&lt;br/>" ; <br/>
+                    ?&gt;
+                </code>                
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="card">
+                <div class="card-header mb-3">
+                    Exercise 7 Output
+                </div>
+                <code class="card-body">
+                    <?php
+                        $hourlyrate = 8.90;
+                        $hoursperweek = 40;
+                        $gross = $hourlyrate * $hoursperweek;
+                        $net = $gross - ($gross * 0.22);
+                        echo "Gross = £" .$gross . "<br/>";
+                        echo "Net   = £" .$net ."<br/>";
+                    ?>
+                </code>                
+                <div class="card-body">
 
+                </div>
+            </div>
+        </div>
+    </section> 
     <?php echo phpinfo();?> 
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
